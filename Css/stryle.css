@@ -1,11 +1,33 @@
+img {
+  width: 100%;
+}
+
 .header-page {
   background: url("../img/wall.png");
   display: flex;
   justify-content: center;
   text-transform: uppercase;
-  padding: 20px 0;
+  padding: 2rem 0;
 }
 
 .main-content {
   background: url("../img/cork.png");
+}
+
+.main-content .card {
+  position: relative;
+}
+.main-content .card:hover {
+  transform: rotateX("15");
+  transition: 2s;
+}
+
+.card .pin {
+  position: absolute;
+  top: -1rem;
+  left: 50%;
+}
+
+.card .card-body {
+  padding: 1rem 0;
 }
