@@ -20,9 +20,11 @@ img {
 
 .main-content .card {
   position: relative;
+  cursor: pointer;
 }
 .main-content .card:hover {
   transform: rotate(30deg);
+  transition: 1s;
   z-index: 10;
 }
 
