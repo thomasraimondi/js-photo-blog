@@ -1,0 +1,11 @@
+.header-page {
+  background: url("../img/wall.png");
+  display: flex;
+  justify-content: center;
+  text-transform: uppercase;
+  padding: 20px 0;
+}
+
+.main-content {
+  background: url("../img/cork.png");
+}
