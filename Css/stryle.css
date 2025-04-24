@@ -1,3 +1,7 @@
+body {
+  font-family: "Edu TAS Beginner";
+}
+
 img {
   width: 100%;
 }
@@ -18,14 +22,20 @@ img {
   position: relative;
 }
 .main-content .card:hover {
-  transform: rotateX("15");
-  transition: 2s;
+  transform: rotate(30deg);
+  z-index: 10;
+}
+
+.main-content .card:hover .pin {
+  display: none;
 }
 
 .card .pin {
   position: absolute;
-  top: -1rem;
+  width: 2rem;
+  top: 0;
   left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .card .card-body {
