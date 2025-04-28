@@ -1,6 +1,6 @@
 const uri = "https://lanciweb.github.io/demo/api/pictures";
 const listOfCards = document.getElementById("cards-list");
-const modalImgLabel = document.getElementById("img-label");
+const modalImgTitle = document.querySelector(".modal-title");
 const modalBody = document.getElementById("modal-body-img");
 
 axios.get(uri).then((responce) => {
@@ -17,7 +17,7 @@ axios.get(uri).then((responce) => {
       const cardId = parseInt(card.getAttribute("data-card-id"));
       cards.find((card) => {
         if (card.id === cardId) {
-          modalImgLabel.innerText = card.title;
+          modalImgTitle.innerText = card.title;
           modalBody.src = card.url;
         }
       });
