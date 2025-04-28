@@ -23,7 +23,7 @@ img {
   cursor: pointer;
 }
 .main-content .card:hover {
-  transform: rotate(30deg);
+  transform: rotate(10deg);
   transition: 1s;
   z-index: 10;
 }
